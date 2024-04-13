@@ -1,1 +1,158 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: rgb(127, 0, 255);
+  background: linear-gradient(90deg, rgb(127, 0, 255) 0%, rgb(255, 182, 193) 100%);
+}
+
+box {
+  width: 1080px;
+  height: 640px;
+  background-color: #28282b;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-areas: "M B";
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+main {
+  grid-area: M;
+  padding: 40px 20px;
+  display: grid;
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+main span,
+main h2 {
+  cursor: default;
+}
+main .titleMain {
+  margin-top: 120px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+main .titleMain h2 {
+  color: #e5e4e2;
+  margin: 0;
+  font-size: 32px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #7f00ff 0%, #ffb6c1 30%); /* Gradiente de laranja para vermelho */
+  -webkit-background-clip: text; /* Aplica o gradiente dentro do texto */
+  color: transparent; /* Torna o texto transparente para mostrar o gradiente por trás */
+}
+main .titleMain span {
+  font-size: 12px;
+  color: silver;
+}
+main .inputField {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+main .inputField input[type=text],
+main .inputField input[type=password] {
+  border: none;
+  background-color: transparent;
+  border-bottom: rgb(102, 102, 102) solid 2px;
+  outline: none;
+  color: white;
+  height: 32px;
+  font-size: 16px;
+}
+main .inputField span {
+  font-size: 12px;
+  color: silver;
+  align-self: flex-end;
+}
+main button.loginNow {
+  background: rgb(127, 0, 255);
+  background: linear-gradient(90deg, rgb(127, 0, 255) 0%, rgb(255, 182, 193) 100%);
+  border: none;
+  padding: 8px;
+  height: 32px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+}
+main .footerMain {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  align-self: self-end;
+  justify-content: space-between;
+}
+main .footerMain span {
+  font-size: 12px;
+  color: silver;
+}
+main .footerMain button.signUp {
+  background-color: #28282b;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+  color: #e5e4e2;
+}
+
+.overBanner {
+  grid-area: B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding: 20px;
+  background: rgb(127, 0, 255);
+  background: linear-gradient(90deg, rgba(128, 0, 255, 0.288) 0%, rgba(255, 182, 193, 0.445) 100%);
+}
+.overBanner h1 {
+  font-size: 120px;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+.overBanner p {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+.overBanner span {
+  font-size: 12px;
+  color: #e5e4e2;
+}
+
+.banner {
+  grid-area: B;
+  background-color: #4e4e4e;
+  overflow: hidden;
+}
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
