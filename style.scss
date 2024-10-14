@@ -44,18 +44,23 @@ $nBlack: #28282b;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-      cursor: pointer;
+		cursor: pointer;
 	}
 }
 
 body {
 	margin: 0;
 	padding: 0;
+}
+
+#root {
+	margin: 0;
+	padding: 0;
 	height: 100vh;
 	display: grid;
 	place-items: center;
-	grid-template-areas: "H";
-	z-index:2;
+	grid-template-areas: 'H';
+	z-index: 2;
 }
 
 box {
@@ -158,7 +163,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	z-index: 1;
-   padding: $nPadding*5;
+	padding: $nPadding * 5;
 
 	background: rgb(127, 0, 255);
 	background: linear-gradient(
@@ -170,7 +175,7 @@ main {
 		font-size: 120px;
 		color: white;
 		font-weight: 600;
-      margin: 0;
+		margin: 0;
 	}
 	p {
 		color: white;
@@ -190,7 +195,7 @@ main {
 	}
 }
 
-.background{
+.background {
 	z-index: -1;
 	height: 100%;
 	width: 100%;
